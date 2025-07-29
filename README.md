@@ -52,17 +52,18 @@ npm install
 # Start the server
 npm run dev
 
-Testing the API
-Use tools like Postman to test:
+🧪 API Endpoints
+🔐 Authentication
+Method	Endpoint	Description
+POST	/api/auth/register	Register new user
+POST	/api/auth/login	Login existing user
 
-POST /api/v1/auth/register
+📦 Product Management (Protected)
+Method	Endpoint	Description
+GET	/api/products	Get all products
+POST	/api/products	Add a new product
+PUT	/api/products/:id	Update a product
+DELETE	/api/products/:id	Delete a product
 
-POST /api/v1/auth/login
+✅ Use Bearer <token> in the Authorization header for protected routes.
 
-GET /api/v1/items
-
-POST /api/v1/items
-
-PUT /api/v1/items/:id
-
-DELETE /api/v1/items/:id
